@@ -6,8 +6,13 @@
         <serverItem :list="serverData"></serverItem>
       </div>
       <div class="unit">
-        <div class="title">多行业一站式解决方案</div>
-        <p class="unit_desc">我们拥有最专业的团队，通过对企业痛点的准确定位，形成高效的系统解决方案，让企业冲破传统行业模式的束缚，提升核心竞争力</p>
+        <div class="title">多行业一站式解决方案
+          <p class="unit_desc">我们拥有最专业的团队，通过对企业痛点的准确定位，形成高效的系统解决方案，让企业冲破传统行业模式的束缚，提升核心竞争力</p>
+        </div>
+        <solutionList></solutionList>
+      </div>
+      <div class="unit">
+        <div class="title">我们的优势</div>
         <solutionItem></solutionItem>
       </div>
     </div>
@@ -17,10 +22,12 @@
 <script>
   import serverItem from './parts/serverItem';
   import solutionItem from './parts/solutionItem'
+  import solutionList from './parts/solutionList'
   export default {
     components: {
       serverItem,
-      solutionItem
+      solutionItem,
+      solutionList
     },
     data() {
       return {
@@ -61,15 +68,17 @@
     margin-left: auto;
     margin-right: auto;
     .unit {
-      padding: 54px 35px;
+      padding: 54px 35px 0;
       .title {
         font-size: 34px;
         text-align: center;
         margin-bottom: 40px;
         letter-spacing: 9px;
-      }
-      .unit_desc {
-        text-align: center;
+        .unit_desc {
+          font-size: 14px;
+          letter-spacing: 0px;
+          margin-top: 15px;
+        }
       }
     }
   }

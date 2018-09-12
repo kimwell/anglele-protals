@@ -55,7 +55,7 @@
       display: flex;
       -ms-flex-align: center;
       align-items: center;
-      margin: 120px 0;
+      padding: 100px 0;
       &:after {
         content: " ";
         display: block;

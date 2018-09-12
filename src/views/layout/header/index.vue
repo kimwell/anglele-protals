@@ -27,9 +27,9 @@
         </div>
       </div>
     </div>
-    <indexBanner v-if="currentPage === 'index'"></indexBanner>
+    <!-- <indexBanner v-if="currentPage === 'index'"></indexBanner> -->
     <div class="container banner-inner" v-if="currentPage === 'index'">
-      <h2 class="animated fadeInDown index-title">引领<span>行业</span>发展方向，衔接<span>智慧</span>未来</h2>
+      <h2 class="animated fadeInDown index-title">引领<span>行业</span>发展，衔接<span>智慧</span>未来</h2>
     </div>
     <div class="container banner-inner" v-if="currentPage === 'about'">
       <div class="info">
