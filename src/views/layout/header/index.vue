@@ -11,14 +11,14 @@
             解决方案
             <span class="arrow"></span>
             <div class="sub-navs">
+              <router-link to="/solution/health"><span class="iconfont icon-yiyuan1"></span>医院大健康平台</router-link>
+              <router-link to="/solution/sass"><span class="iconfont icon-cangchu1"></span>仓储管理(SASS)</router-link>
+              <router-link to="/solution/E-government"><span class="iconfont icon-dianshang"></span>电子政务平台</router-link>
+              <router-link to="/solution/IoT"><span class="iconfont icon-iot"></span>物联网平台</router-link>
               <router-link to="/solution/B2B"><span class="iconfont icon-lianjie"></span>B2B平台</router-link>
               <router-link to="/solution/B2C"><span class="iconfont icon-gouwudai"></span>B2C平台</router-link>
-              <router-link to="/solution/E-government"><span class="iconfont icon-dianshang"></span>电子政务平台</router-link>
-              <router-link to="/solution/sass"><span class="iconfont icon-cangchu1"></span>仓储管理(SASS)</router-link>
-              <!-- <router-link to="/solution/B2B"><span class="iconfont icon-gouwuche"></span>O2O平台</router-link>
-                    <router-link to="/solution/B2C"><span class="iconfont icon-nongchangjieshaosvg"></span>欢乐农场平台</router-link>
-                    <router-link to="/solution/B2B"><span class="iconfont icon-yiyuan1"></span>医院大健康平台</router-link>
-                    <router-link to="/solution/B2C"><span class="iconfont icon-iot"></span>物联网平台</router-link> -->
+              <router-link to="/solution/O2O"><span class="iconfont icon-gouwuche"></span>O2O平台</router-link>
+              <router-link to="/solution/farm"><span class="iconfont icon-nongchangjieshaosvg"></span>欢乐农场平台</router-link>
             </div>
             <div class="sub-navs-arrow"></div>
           </div>
@@ -103,6 +103,54 @@
         <img src="../../../assets/images/egovernment-baner-img.png" class="animated zoomIn">
       </div>
     </div>
+    <div class="container banner-inner" v-if="currentPage === 'O2O'">
+      <div class="info">
+        <div class="title animated fadeInDown">O2O平台解决方案</div>
+        <div class="desc animated fadeInDown">订餐系统平台的出现，顺应了时代的发展，改变了用户享受生活的方式，助力餐饮行业的转型升级</div>
+        <div class="btns animated fadeInDown">
+          <a class="concat O2O" href="/about">联系我们</a>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="../../../assets/images/O2O-banner-img.png" class="animated zoomIn">
+      </div>
+    </div>
+    <div class="container banner-inner" v-if="currentPage === 'health'">
+      <div class="info">
+        <div class="title animated fadeInDown">医疗大健康平台解决方案</div>
+        <div class="desc animated fadeInDown">享受智慧生活，诠释健康奥义</div>
+        <div class="btns animated fadeInDown">
+          <a class="concat health" href="/about">联系我们</a>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="../../../assets/images/health-baner-img.png" class="animated zoomIn">
+      </div>
+    </div>
+    <div class="container banner-inner" v-if="currentPage === 'farm'">
+      <div class="info">
+        <div class="title animated fadeInDown">欢乐农场解决方案</div>
+        <div class="desc animated fadeInDown">走进农业物联网时代，打造智能、绿色的生态农场</div>
+        <div class="btns animated fadeInDown">
+          <a class="concat farm" href="/about">联系我们</a>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="../../../assets/images/farm-baner-img.png" class="animated zoomIn">
+      </div>
+    </div>
+    <div class="container banner-inner" v-if="currentPage === 'IoT'">
+      <div class="info">
+        <div class="title animated fadeInDown">物联网平台解决方案</div>
+        <div class="desc animated fadeInDown">感知世界，构建万物互联的美好世界，把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界</div>
+        <div class="btns animated fadeInDown">
+          <a class="concat IoT" href="/about">联系我们</a>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="../../../assets/images/IoT-baner-img.png" class="animated zoomIn">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -125,13 +173,13 @@
       headerStyle() {
         return {
           height: "620px",
-          backgroundImage: `linear-gradient(312deg, ${this.colors.cstart} 0%, ${this.colors.cend} 100%)`
+          backgroundImage: `linear-gradient(312deg, ${this.colors.start} 0%, ${this.colors.end} 100%)`
         };
       },
       coverStyle() {
         return {
           opacity: "1",
-          backgroundImage: `linear-gradient(312deg, ${this.colors.cstart} 0%, ${this.colors.cend} 100%)`
+          backgroundImage: `linear-gradient(312deg, ${this.colors.start} 0%, ${this.colors.end} 100%)`
         };
       },
       currentPage() {
@@ -386,6 +434,18 @@
         }
         &.government {
           color: #04C8AD
+        }
+        &.O2O {
+          color: #0CC7F3
+        }
+        &.health{
+          color: #FF7F7F;
+        }
+        &.farm{
+          color: #29FFC6;
+        }
+        &.IoT{
+          color: #9372E5;
         }
       }
       .title {
