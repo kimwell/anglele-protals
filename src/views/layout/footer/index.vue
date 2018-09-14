@@ -78,12 +78,12 @@
         }
         .info {
           margin-bottom: 20px;
-          display: inline-block;
-          width: 50%;
+          display: block;
+          width: 100%;
           float: left;
-          &:last-child {
-            width: 100%;
-          }
+          // &:last-child {
+          //   width: 100%;
+          // }
           .iconfont {
             color: #fff;
             font-size: 15px;
@@ -99,7 +99,7 @@
         opacity: 0.6;
         display: block;
         height: 40px;
-        margin-bottom: 10px;
+        margin-bottom: 18px;
         &:hover {
           opacity: 1;
         }
@@ -122,7 +122,9 @@
         }
       }
       .copyright{
-        margin-top: 20px;
+        margin-top: 30px;
+        text-align: center;
+        color: rgba(255, 255, 255, .4)
       }
     }
   }
