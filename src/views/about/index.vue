@@ -41,13 +41,13 @@
           <ul class="clearfix">
             <li>
               <div><span class="iconfont icon-QQ1"></span></div>
-              <div class="stitle">腾讯QQ</div>
+              <div class="stitle">企业服务群</div>
               <div class="content">511653089</div>
             </li>
             <li>
               <div><span class="iconfont icon-youxiang"></span></div>
               <div class="stitle">企业邮箱</div>
-              <div class="content">Anglele@qq.com</div>
+              <div class="content">anglele@188.com</div>
             </li>
             <li>
               <div><span class="iconfont icon-dizhi1"></span></div>
@@ -89,7 +89,7 @@
         margin-bottom: 40px;
         letter-spacing: 9px;
       }
-      .introduce{
+      .introduce {
         line-height: 30px;
       }
     }
@@ -137,7 +137,8 @@
       }
     }
   }
-  .environment{
+  
+  .environment {
     margin-top: -20px;
     height: 960px;
     background: top center url('https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/environment.png') no-repeat;

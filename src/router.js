@@ -20,7 +20,7 @@ const router = new Router({
       meta: {
         requireAuth: true,
         seo: {
-          title: '苏州安基利尔数据科技有限公司（anglele）'
+          title: '安基利尔 - 智慧物联网解决方案服务商'
         }
       }
     }, {

@@ -9,7 +9,7 @@
       </div>
       <div class="col right">
         <p class="col-title">合作伙伴</p>
-        <a class="frind-link" v-for="(item,index) in list" :href="item.url" :target="item.openType === '1' ? '_blank':'_self'">
+        <a class="frind-link" v-for="(item,index) in list" :href="item.url != '' ? item.url : 'javascript:;'" :target="item.openType === '1' ? '_blank':'_self'">
           <img :src="item.src">
         </a>
       </div>
