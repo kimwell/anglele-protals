@@ -52,7 +52,7 @@
             <li>
               <div><span class="iconfont icon-dizhi1"></span></div>
               <div class="stitle">公司地址</div>
-              <div class="content">苏州市张家港市杨舍镇旺西路华东大厦4F</div>
+              <div class="content">苏州市张家港市杨舍镇滨河路2号华东国际大厦4F</div>
             </li>
             <li>
               <div><span class="iconfont icon-dianhua1"></span></div>

@@ -20,7 +20,7 @@ const router = new Router({
       meta: {
         requireAuth: true,
         seo: {
-          title: '安基利尔 - 智慧物联网解决方案服务商'
+          title: '安基利尔'
         }
       }
     }, {
@@ -30,7 +30,7 @@ const router = new Router({
       meta: {
         requireAuth: true,
         seo: {
-          title: '关于我们'
+          title: '关于我们-安基利尔'
         }
       }
     }, {
@@ -40,7 +40,7 @@ const router = new Router({
       meta: {
         requireAuth: true,
         seo: {
-          title: '新闻中心'
+          title: '新闻中心-安基利尔'
         }
       }
     }, {
@@ -50,7 +50,7 @@ const router = new Router({
       meta: {
         requireAuth: true,
         seo: {
-          title: '新闻中心'
+          title: ''
         }
       }
     }, {

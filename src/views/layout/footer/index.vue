@@ -2,13 +2,16 @@
   <div class="page-footer">
     <div class="container">
       <div class="title">安基利尔数据科技有限公司</div>
+      <div class="clearfix">
       <div class="col left">
-        <div class="info"><span class="iconfont icon-dizhi"></span>苏州市张家港市杨舍镇旺西路华东大厦4F</div>
         <div class="info"><span class="iconfont icon-dianhua"></span>0512-58588922</div>
+        <div class="info"><span class="iconfont icon-youxiang1"></span>anglele@188.com</div>
         <div class="info"><span class="iconfont icon-shijian"></span>9:00-18:00(周一至周五)</div>
+        <div class="info"><span class="iconfont icon-lianxifangshi"></span>511653089（群）</div>
+        <div class="info"><span class="iconfont icon-dizhi"></span>苏州市张家港市杨舍镇滨河路2号华东国际大厦4F</div>
       </div>
       <div class="col right">
-        <p class="col-title">合作伙伴</p>
+        <p class="col-title center-title">合作伙伴</p>
         <a class="frind-link" v-for="(item,index) in list" :href="item.url != '' ? item.url : 'javascript:;'" :target="item.openType === '1' ? '_blank':'_self'">
           <img :src="item.src">
         </a>
@@ -21,7 +24,8 @@
           </p>
         </div>
       </div>
-      <div>COPYRIFHT © 2017 苏州安基利尔数据科技有限公司 版权所有 苏ICP备1000000号-0</div>
+    </div>
+    <div class="copyright">COPYRIFHT © 2017 苏州安基利尔数据科技有限公司 版权所有 苏ICP备1000000号-0</div>
     </div>
   </div>
 </template>
@@ -34,15 +38,15 @@
       }
     },
     methods: {
-      getAd(){
-        this.$http.post(this.$api.findDoortisement).then(res =>{
-          if(res.code === 1000){
+      getAd() {
+        this.$http.post(this.$api.findDoortisement).then(res => {
+          if (res.code === 1000) {
             this.list = res.data;
           }
         })
       }
     },
-    created(){
+    created() {
       this.getAd();
     }
   }
@@ -57,7 +61,7 @@
       max-width: 1170px;
       margin-left: auto;
       margin-right: auto;
-      padding: 65px 0 63px;
+      padding: 65px 0 20px;
       .title {
         font-size: 18px;
         margin-bottom: 35px;
@@ -66,7 +70,7 @@
         width: 50%;
         float: left;
         position: relative;
-        .col-title{
+        .col-title {
           margin-bottom: 10px;
         }
         &.right {
@@ -74,7 +78,13 @@
         }
         .info {
           margin-bottom: 20px;
-          .iconfont{
+          display: inline-block;
+          width: 50%;
+          float: left;
+          &:last-child {
+            width: 100%;
+          }
+          .iconfont {
             color: #fff;
             font-size: 15px;
             margin-right: 8px;
@@ -87,8 +97,9 @@
       }
       .frind-link {
         opacity: 0.6;
-        display: inline-block;
+        display: block;
         height: 40px;
+        margin-bottom: 10px;
         &:hover {
           opacity: 1;
         }
@@ -98,7 +109,7 @@
           margin-right: 8px;
         }
       }
-      .qr-info{
+      .qr-info {
         padding-left: 20%;
       }
       .qr-img {
@@ -109,6 +120,9 @@
           position: relative;
           vertical-align: baseline;
         }
+      }
+      .copyright{
+        margin-top: 20px;
       }
     }
   }

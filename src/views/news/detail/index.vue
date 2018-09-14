@@ -28,6 +28,7 @@
         this.$http.post(this.$api.findOne,{id: this.id}).then(res =>{
           if(res.code === 1000){
             this.item = res.data;
+            document.title = res.data.title;
           }
         })
       }
