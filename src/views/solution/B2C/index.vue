@@ -37,7 +37,7 @@
             <li>
               <div><span class="iconfont icon-zhihuicangchu2"></span></div>
               <div class="stitle">运营支持</div>
-              <p class="desc">提供商城活动以及宣传策划方案，使用微博、公众号、微信等新媒体运营工具进行吸粉引流</p>
+              <p class="desc">提供商城活动以及宣传策划方案，使用新媒体运营工具进行吸粉引流</p>
             </li>
             <li>
               <div><span class="iconfont icon-dianzi_ht"></span></div>

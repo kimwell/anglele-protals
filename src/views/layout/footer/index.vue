@@ -17,7 +17,7 @@
         <div class="qr-info">
           <p class="col-title">微信公众号</p>
           <p class="qr-img">
-            <img src="../../../assets/images/qr-img.png">
+            <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/qr-img.png">
           </p>
         </div>
       </div>
@@ -93,9 +93,9 @@
           opacity: 1;
         }
         img {
-          width: 90px;
           height: 40px;
           display: inline-block;
+          margin-right: 8px;
         }
       }
       .qr-info{

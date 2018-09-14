@@ -31,7 +31,7 @@
       <div class="unit">
         <div class="title">餐饮行业O2O解决方案模式图</div>
         <div class="solution-img">
-          <img src="../../../assets/images/solution-o2o.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-o2o.png">
         </div>
       </div>
       <div class="unit">

@@ -5,18 +5,18 @@
         <div class="title">IoT数据平台</div>
         <div class="unit_desc">Iot数据平台是一套集云计算，终端和云端双向通信、设备管理以及数据分析等功能，运用先进的阿里云物联网套件，以智能化服务于用户为导向的物联网软件平台。</div>
         <div class="unit_img">
-          <img style="margin-top: 110px;" src="../../../assets/images/IoT-img0.png">
+          <img style="margin-top: 110px;" src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/IoT-img0.png">
         </div>
       </div>
       <div class="unit">
         <div class="title">多应用场景</div>
         <div class="unit_img">
           <div class="unit_img_desc">GIS场景功能</div>
-          <img src="../../../assets/images/IoT-img1.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/IoT-img1.png">
         </div><div class="unit_img">
           <div class="unit_img_desc">体征传感器场景</div>
-          <img src="../../../assets/images/IoT-img2.png">
-          <img src="../../../assets/images/IoT-img3.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/IoT-img2.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/IoT-img3.png">
         </div>
       </div>
     </div>

@@ -62,6 +62,7 @@
         width: 47.05882%;
         float: right;
         margin-right: 0;
+        text-align: left;
       }
       .title {
         font-size: 28px;

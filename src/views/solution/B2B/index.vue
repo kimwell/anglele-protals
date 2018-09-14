@@ -42,7 +42,7 @@
             <li>
               <div><span class="iconfont icon-zhihuicangchu2"></span></div>
               <div class="stitle">供应链金融</div>
-              <p class="desc">平台达到一定规模后，与银行进行合作，为合作企业的可持续经营提供相应的资金扶持</p>
+              <p class="desc">平台达到一定规模后，与银行进行合作，为合作企业提供相应的资金扶持</p>
             </li>
           </ul>
         </div>
@@ -51,7 +51,7 @@
         <div class="title">技术解决方案</div>
         <p class="desc">安全、可靠的为电商行业客户量身定制专属产品和服务</p>
         <div class="solution-img">
-          <img src="../../../assets/images/solution-tech.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-tech.png">
         </div>
       </div>
       <div class="unit">

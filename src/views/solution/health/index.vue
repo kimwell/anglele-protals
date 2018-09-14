@@ -7,7 +7,7 @@
             <li>
               <div><span class="iconfont icon-beijing"></span></div>
               <div class="stitle">智慧养老</div>
-              <p class="desc">随着科技进步，新型养老方式日趋流行，智慧养老越来越受居家老人、社区及养老机构的青睐，它以构建实时、快捷、高效、低成本的，物联化、互联化、智能化的养老服务为核心，让老人充分享受物联网带来的便捷和舒适</p>
+              <p class="desc">随着科技进步，智慧养老越来越受居家老人及养老机构的青睐，它以构建实时快捷、智能物联的养老服务为核心，让老人充分享受便捷舒适的生活</p>
             </li>
             <li>
               <div><span class="iconfont icon-jingzhunsousuo"></span></div>
@@ -28,9 +28,9 @@
         </div>
       </div>
       <div class="unit">
-        <div class="title">餐饮行业O2O解决方案模式图</div>
+        <div class="title">大健康医疗生态圈</div>
         <div class="solution-img">
-          <img src="../../../assets/images/solution-health.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-health.png">
         </div>
       </div>
       <div class="unit">

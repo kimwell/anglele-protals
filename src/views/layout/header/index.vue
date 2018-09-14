@@ -31,125 +31,19 @@
     <div class="container banner-inner" v-if="currentPage === 'index'">
       <h2 class="animated fadeInDown index-title">引领<span>行业</span>发展，衔接<span>智慧</span>未来</h2>
     </div>
-    <div class="container banner-inner" v-if="currentPage === 'about'">
+    <div v-for="(item,index) in bannerList" :key="index">
+    <div class="container banner-inner" v-if="currentPage === item.name">
       <div class="info">
-        <div class="title animated fadeInDown">了解我们</div>
-        <div class="desc animated fadeInDown">欢迎胸怀世界、坚韧平实、洞见新知的你，和我们一起走进智能世界</div>
+        <div class="title animated fadeInDown">{{item.title}}</div>
+        <div class="desc animated fadeInDown">{{item.desc}}</div>
         <div class="btns animated fadeInDown">
-          <a class="concat about" href="/about">联系我们</a>
+          <a class="concat " :class="item.name" href="/about">联系我们</a>
         </div>
       </div>
       <div class="icon">
-        <img src="../../../assets/images/about-baner-img.png" class="animated zoomIn">
+        <img :src="item.img" class="animated zoomIn">
       </div>
     </div>
-    <div class="container banner-inner" v-if="currentPage === 'B2B'">
-      <div class="info">
-        <div class="title animated fadeInDown">B2B解决方案</div>
-        <div class="desc animated fadeInDown">七大功能支撑B2B大宗电商交易平台，整合线上线下资源，助力企业转型升级，推动行业健康发展。</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat B2B" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/B2B-baner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'B2C'">
-      <div class="info">
-        <div class="title animated fadeInDown">电商&B2C解决方案</div>
-        <div class="desc animated fadeInDown">建设专业的品牌、零售独立官方商城,线上线下完美融合PC，移动等多终端统一管理</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat B2C" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/B2C-baner-img.png" :class="currentPage === 'B2C' ? 'animated zoomIn' : ''">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'news' || currentPage === 'article'">
-      <div class="info">
-        <div class="title animated fadeInDown">新闻中心</div>
-        <div class="desc animated fadeInDown">NEWS 与您分享</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat news" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/news-baner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'sass'">
-      <div class="info">
-        <div class="title animated fadeInDown">仓储管理（SASS）解决方案</div>
-        <div class="desc animated fadeInDown">根据B2B大宗电商的智慧仓储管理平台，可复制,可定制，适用于多种大宗电商平台。</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat sass" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/sass-baner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'E-government'">
-      <div class="info">
-        <div class="title animated fadeInDown">电子政务平台解决方案</div>
-        <div class="desc animated fadeInDown">电子政务网络平台解决方案涵盖了互联互通的统一政务网络、云管端立体的安全防护体系、数据共享&应用支撑的融合政务云平台、政府协同办公服务平台、集中统一的网络运维服务管理，具有统一、安全、融合、高效的特点。</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat government" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/egovernment-baner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'O2O'">
-      <div class="info">
-        <div class="title animated fadeInDown">O2O平台解决方案</div>
-        <div class="desc animated fadeInDown">订餐系统平台的出现，顺应了时代的发展，改变了用户享受生活的方式，助力餐饮行业的转型升级</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat O2O" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/O2O-banner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'health'">
-      <div class="info">
-        <div class="title animated fadeInDown">医疗大健康平台解决方案</div>
-        <div class="desc animated fadeInDown">享受智慧生活，诠释健康奥义</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat health" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/health-baner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'farm'">
-      <div class="info">
-        <div class="title animated fadeInDown">欢乐农场解决方案</div>
-        <div class="desc animated fadeInDown">走进农业物联网时代，打造智能、绿色的生态农场</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat farm" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/farm-baner-img.png" class="animated zoomIn">
-      </div>
-    </div>
-    <div class="container banner-inner" v-if="currentPage === 'IoT'">
-      <div class="info">
-        <div class="title animated fadeInDown">物联网平台解决方案</div>
-        <div class="desc animated fadeInDown">感知世界，构建万物互联的美好世界，把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat IoT" href="/about">联系我们</a>
-        </div>
-      </div>
-      <div class="icon">
-        <img src="../../../assets/images/IoT-baner-img.png" class="animated zoomIn">
-      </div>
     </div>
   </div>
 </template>
@@ -166,7 +60,63 @@
     data() {
       return {
         headerFixed: false,
-        show: false
+        show: false,
+        bannerList: [{
+          title: '了解我们',
+          desc: '欢迎胸怀世界、坚韧平实、洞见新知的你，和我们一起走进智能世界',
+          name: 'about',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/about-baner-img.png'
+        }, {
+          title: 'B2B解决方案',
+          desc: '七大功能支撑B2B大宗电商交易平台，整合线上线下资源，助力企业转型升级，推动行业健康发展',
+          name: 'B2B',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/B2B-baner-img.png'
+        }, {
+          title: '电商&B2C解决方案',
+          desc: '建设专业的品牌、零售独立官方商城,线上线下完美融合PC，移动等多终端统一管理',
+          name: 'B2C',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/B2C-baner-img.png'
+        }, {
+          title: '新闻中心',
+          desc: 'NEWS与您分享',
+          name: 'news',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/news-baner-img.png'
+        }, {
+          title: '新闻中心',
+          desc: 'NEWS与您分享',
+          name: 'article',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/news-baner-img.png'
+        }, {
+          title: '仓储管理（SASS）解决方案',
+          desc: '针对B2B大宗电商的智慧仓储管理平台，可复制,可定制，适用于多种大宗电商平台',
+          name: 'sass',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/sass-baner-img.png'
+        }, {
+          title: '电子政务平台解决方案',
+          desc: '顺应智慧物联网时代的发展，建设智能信息化电子政务，带动国民经济和社会信息化',
+          name: 'E-government',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/egovernment-baner-img.png'
+        }, {
+          title: 'O2O平台解决方案',
+          desc: '订餐系统平台的出现，顺应了时代的发展，改变了用户享受生活的方式，助力餐饮行业的转型升级',
+          name: 'O2O',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/O2O-banner-img.png'
+        }, {
+          title: '医疗大健康平台解决方案',
+          desc: '享受智慧生活，诠释健康奥义',
+          name: 'health',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/health-baner-img.png'
+        }, {
+          title: '欢乐农场解决方案',
+          desc: '走进农业物联网时代，打造智能、绿色的生态农场',
+          name: 'farm',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/farm-baner-img.png'
+        }, {
+          title: '物联网平台解决方案',
+          desc: '把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界',
+          name: 'IoT',
+          img: 'https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/IoT-baner-img.png'
+        }]
       };
     },
     computed: {
@@ -386,7 +336,7 @@
     height: 540px;
     margin-top: 80px;
     .index-title {
-      padding-top: 150px;
+      padding-top: 120px;
       text-align: center;
       font-size: 48px;
       color: #fff;
@@ -432,19 +382,19 @@
         &.news {
           color: #145694
         }
-        &.government {
+        &.E-government {
           color: #04C8AD
         }
         &.O2O {
           color: #0CC7F3
         }
-        &.health{
+        &.health {
           color: #FF7F7F;
         }
-        &.farm{
+        &.farm {
           color: #29FFC6;
         }
-        &.IoT{
+        &.IoT {
           color: #9372E5;
         }
       }

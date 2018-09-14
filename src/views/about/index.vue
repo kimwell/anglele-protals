@@ -140,6 +140,6 @@
   .environment{
     margin-top: -20px;
     height: 960px;
-    background: top center url('../../assets/images/environment.png') no-repeat;
+    background: top center url('https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/environment.png') no-repeat;
   }
 </style>
