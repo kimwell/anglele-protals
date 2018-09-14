@@ -27,23 +27,23 @@
         </div>
       </div>
     </div>
-    <!-- <indexBanner v-if="currentPage === 'index'"></indexBanner> -->
+    <indexBanner v-if="currentPage === 'index'"></indexBanner>
     <div class="container banner-inner" v-if="currentPage === 'index'">
       <h2 class="animated fadeInDown index-title">引领<span>行业</span>发展，衔接<span>智慧</span>未来</h2>
     </div>
     <div v-for="(item,index) in bannerList" :key="index">
-    <div class="container banner-inner" v-if="currentPage === item.name">
-      <div class="info">
-        <div class="title animated fadeInDown">{{item.title}}</div>
-        <div class="desc animated fadeInDown">{{item.desc}}</div>
-        <div class="btns animated fadeInDown">
-          <a class="concat " :class="item.name" href="/about">联系我们</a>
+      <div class="container banner-inner" v-if="currentPage === item.name">
+        <div class="info">
+          <div class="title animated fadeInDown">{{item.title}}</div>
+          <div class="desc animated fadeInDown">{{item.desc}}</div>
+          <div class="btns animated fadeInDown">
+            <a class="concat " :class="item.name" href="/about">联系我们</a>
+          </div>
+        </div>
+        <div class="icon">
+          <img :src="item.img" class="animated zoomIn">
         </div>
       </div>
-      <div class="icon">
-        <img :src="item.img" class="animated zoomIn">
-      </div>
-    </div>
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="title">安基利尔数据科技有限公司</div>
       <div class="col left">
-        <div class="info"><span class="iconfont icon-dizhi"></span>苏州市张家港市杨舍镇旺西路华东大厦403A</div>
+        <div class="info"><span class="iconfont icon-dizhi"></span>苏州市张家港市杨舍镇旺西路华东大厦4F</div>
         <div class="info"><span class="iconfont icon-dianhua"></span>0512-58588922</div>
         <div class="info"><span class="iconfont icon-shijian"></span>9:00-18:00(周一至周五)</div>
       </div>
