@@ -4,6 +4,7 @@ import router from './router'
 import * as filters from './filters/index' //过滤器
 import axios from './http'
 import * as api from './api'
+import 'babel-polyfill'
 
 import animate from 'animate.css'
 

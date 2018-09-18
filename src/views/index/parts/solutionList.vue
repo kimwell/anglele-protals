@@ -30,7 +30,7 @@
       </router-link>
       <router-link to="/solution/IoT" tag="li">
         <div class="cover">
-          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-list2.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-list1.png">
         </div>
         <div class="title">物联网解决方案</div>
         <div class="desc">把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界</div>
@@ -39,7 +39,7 @@
       </router-link>
       <router-link to="/solution/B2B" tag="li">
         <div class="cover">
-          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-list1.png">
+          <img src="https://anglele.oss-cn-shanghai.aliyuncs.com/portal/static/solution-list2.png">
         </div>
         <div class="title">B2B解决方案</div>
         <div class="desc">七大功能支撑B2B大宗电商交易平台，整合线上线下资源，助力企业转型升级，推动行业健康发展</div>

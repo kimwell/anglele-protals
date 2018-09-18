@@ -123,13 +123,13 @@
       headerStyle() {
         return {
           height: "620px",
-          backgroundImage: `linear-gradient(312deg, ${this.colors.start} 0%, ${this.colors.end} 100%)`
+          backgroundImage: `linear-gradient(312deg, ${this.colors.start} 0%, ${this.colors.end} 100%)`,
         };
       },
       coverStyle() {
         return {
           opacity: "1",
-          backgroundImage: `linear-gradient(312deg, ${this.colors.start} 0%, ${this.colors.end} 100%)`
+          backgroundImage: `linear-gradient(312deg, ${this.colors.start} 0%, ${this.colors.end} 100%)`,
         };
       },
       currentPage() {
@@ -155,6 +155,9 @@
 </script>
 
 <style lang='less' scoped>
+  :root {
+    filter: none;
+  }
   .page-header {
     height: 620px;
     position: relative;

@@ -32,12 +32,9 @@
       currentPage(val) {
         if (val === 'index') {
           this.colors = {
-            start: "",
-            end: "",
             start: "rgba(101,237,248,1)",
             end: "rgba(31,152,229,1)"
           }
-  
         } else if (val === 'about') {
           this.colors = {
             start: "rgba(8,209,243,1)",
