@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright">COPYRIFHT © 2017 苏州安基利尔数据科技有限公司 版权所有 苏ICP备1000000号-0</div>
+    <div class="copyright">COPYRIFHT © 2017 苏州安基利尔数据科技有限公司 版权所有 <a target="_blank" href="http://www.beian.miit.gov.cn">苏ICP备18053267号</a></div>
     </div>
   </div>
 </template>
@@ -124,7 +124,10 @@
       .copyright{
         margin-top: 30px;
         text-align: center;
-        color: rgba(255, 255, 255, .4)
+        color: rgba(255, 255, 255, .4);
+        a{
+          color: rgba(255, 255, 255, .4)
+        }
       }
     }
   }
