@@ -12,7 +12,7 @@
   "dependencies": {
     "animate": "^1.0.0",
     "animate.css": "^3.7.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "dateformat": "^3.0.3",
     "dateformat-util": "^1.0.5",
